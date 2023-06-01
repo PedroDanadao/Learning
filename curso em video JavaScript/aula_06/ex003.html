@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // convertendo as strings para numbers
+        var n1 = Number.parseInt(window.prompt("Type a number: ")) // tambem funciona so com Number()
+        var n2 = Number.parseFloat(window.prompt("Type another number: ")) // tambem funciona so com Number()
+        // somando os numbers
+        var sum = n1 + n2
+        // convertendo pra string
+        sum = sum.toString()
+        // ou
+        sum = String(sum)
+        // window.alert("sum is equal to: " + sum)
+        //ou
+        window.alert(`sum between ${n1} and ${n2} is equal to: ${sum}`)
+
+    </script>
+</body>
+</html>
