@@ -3,41 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Converter Taxa Pix</title>
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
-
-    <style>
-        input::-webkit-outer-spin-button,
-        input::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Conversor da Taxa Pix</h1>
     <p>
-        Digite aqui o valor a ser transferido:
-        <input type="number">
+        Digite aqui o valor a ser recebido/enviado:
+        <input id="input_value" class="input_value" type="text" placeholder="R$ 0,00" oninput="set_right_value()">
+        <input id="button_convert" type="button" value="Converter" onclick="show_new_value()">
     </p>
-    <!-- <p id="value_paragraph">O novo valor é:</p>
+    <p id="value_paragraph">O valor da transferência é de:</p>
     <p id="message_to_user"></p>
 
     <h2>Taxa Pix</h2>
     <p>
         A taxa pix surgiu em xxxx durante o governo do presidente xxxx
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, corporis harum possimus dolores illum magnam sapiente perspiciatis similique alias, atque accusantium in consequatur dolore sed? Pariatur suscipit nulla blanditiis perspiciatis.
-    </p> -->
+    </p>
 
-    <!-- <script src="pix_converter.js"></script> -->
+    <script src="pix_converter.js"></script>
 </body>
 
 </html>
