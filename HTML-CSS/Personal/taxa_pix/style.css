@@ -1,14 +1,21 @@
-.input_value::-webkit-outer-spin-button,
-.input_value::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+body {
+    background-color: #38bcac;
+    font: normal 15pt Arial;
 }
 
-/* Works for Firefox */
-.input_value[type="number"] {
-    -moz-appearance: textfield;
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39);
 }
 
 .input_value {
     text-align: right;
+}
+
+span + h2 {
+    margin-top: 800px;
 }

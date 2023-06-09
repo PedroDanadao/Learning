@@ -1,6 +1,8 @@
 const value_input = window.document.getElementById("input_value");
 const value_paragraph = window.document.getElementById("value_paragraph")
 
+value_input.addEventListener("keydown", check_enter_pressed)
+
 const taxes_table = {
     "100": 1,
     "1000": 2,
@@ -69,4 +71,10 @@ function get_tax_from_value(transfer_value){
         }
     }
     return table_tax;
+}
+
+function check_enter_pressed(press_event){
+    if (press_event.keyCode == 13){
+        show_new_value();
+    }
 }
