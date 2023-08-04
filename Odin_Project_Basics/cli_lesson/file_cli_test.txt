@@ -1,0 +1,2 @@
+just making a quick file using the command line interface. I navigated to 
+the folder. Created a new folder and now I'm editing it with nano

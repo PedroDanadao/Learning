@@ -1,0 +1,33 @@
+decided to put the history of my shell commands that I used to do the 
+assignment in the cli lesson of the odin project
+
+  565  cd ~/repositories/SC_the_unix_shell/
+  566  ls
+  567  cat Read\ Me.txt 
+  568  mousepad Read\ Me.txt 
+  569  whoami
+  570  cd repositories/
+  571  ls
+  572  mkdir odin_project
+  573  ls
+  574  mv odin_project/ the_odin_project
+  575  ls
+  576  touch the_odin_project/file_cli_test.txt
+  577  nano the_odin_project/file_cli_test.txt 
+  578  cd the_odin_project/
+  579  code index.html style.css
+  580  mk dir images
+  581  mkdir images
+  582  ls
+  583  ls ~
+  584  cd ~
+  585  pwd
+  586  mkdir test
+  587  cd test
+  588  code test.txt
+  589  cd ..
+  590  rm --help
+  591  rm -r test/
+  592  ls
+  593  history | tail -n 30
+  594  history | tail -n 30 > repositories/the_odin_project/cli_lesson_history.txt
