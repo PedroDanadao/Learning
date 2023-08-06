@@ -1,0 +1,6 @@
+Starting the Software Carpentry's Unix Shell course as part of the Odin 
+Project's Command Line Basics" leson. So I decided to include it in 
+my Learning repository.
+
+https://swcarpentry.github.io/shell-novice/index.html
+https://www.theodinproject.com/lessons/foundations-command-line-basics
