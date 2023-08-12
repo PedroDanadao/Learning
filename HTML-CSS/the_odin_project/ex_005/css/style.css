@@ -1,0 +1,53 @@
+* {
+    color: purple;
+}
+
+div {
+    color: red;
+}
+
+.alert {
+    color: green;
+}
+
+#title {
+    color: blue;
+}
+
+.read, .unread {
+    color: white;
+    background-color: black;
+}
+
+.subsection.header {
+    color: black;
+}
+
+.subsection {
+    color: green;
+    background-color: lightgreen;
+}
+
+.subsection#preview {
+    color: darkblue;
+}
+
+.ancestor .child {
+    color: pink;
+    background-color: blue;
+}
+
+.first_item, .second_item {
+    color: yellow;
+    background-color: darkgreen;
+}
+
+.first_item {
+    color: cyan;
+    background-color: darkred;
+}
+
+.second_item {
+    color: magenta;
+    background-color: black;
+}

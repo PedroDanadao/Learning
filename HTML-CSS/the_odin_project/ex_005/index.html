@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing CSS</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- this title will change it's color to purple because of the * selector -->
+    <h1>First title</h1>
+
+    <!-- all divs without a specified class in style.css will be colored red because of the div selector -->
+    <div>Hello World</div>
+    <div>Hello World, again</div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum repudiandae porro quibusdam voluptate harum deleniti eos consequuntur velit sequi iure quos distinctio veritatis facere error, cum debitis amet est.
+    </p>
+    <div>Okay. Bye!</div>
+
+    <!-- this div will be colored green because of the .alert selector -->
+    <div class="alert">ALERT!</div>
+
+    <!-- this div is gonna be blue because of the #title selector -->
+    <div id="title">ID Div</div>
+
+    <!-- both divs will have the white font color with the black background since they are grouped together with the selector .read, .unread -->
+    <div class="read">read div class</div>
+    <div class="unread">unread div class</div>
+
+    <!-- the first div will have a black text due to the .subsection.header selector while the second one will have a green text due to the .subsection selector. Both will have a light green background due to the .subsection selector -->
+    <div class="subsection header">Latest Posts</div>
+    <div class="subsection preview">This is were a preview</div>
+    <!-- the first div will have the same characteristics of the previous div, but the second will have a dark blue text color due to the .subsection#preview selector -->
+    <div class="subsection header">Latest Posts</div>
+    <div class="subsection" id="preview">This is were a preview</div>
+
+    <!-- only the two inner childs will have the pink text color with the blue background color due to the selector .ancestor .child. The outer child div and the ancestor wont be affected. -->
+    <div class="ancestor">
+        ancestor paragraph
+        <div class="child">
+            first child div
+            <div class="child">second child div</div>
+        </div>
+    </div>
+    <div class="child">child, but not child of ancestor</div>
+
+    in this case, due to the selectors ".first_item, .second_item" ".first_item" ".second_item" appearing in that order, both divs will have the options of the last selector(.second_item)
+    <div class="first_item second_item">first item div</div>
+    <div class="first_item second_item">second item div</div>
+</body>
+</html>
