@@ -1,0 +1,23 @@
+ul {
+    border: 3px solid lightsalmon;
+}
+
+li { 
+    border: 3px solid lightgreen;
+    padding: 2px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list li {
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+}
