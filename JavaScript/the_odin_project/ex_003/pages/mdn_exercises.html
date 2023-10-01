@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDN Exercises</title>
+
+    <link rel="stylesheet" href="../css/mdn_style.css">
+</head>
+
+<body>
+    <h2>Functions Exercises</h2>
+    <h3>Functions 1</h3>
+    <p>
+        For the first task, you have to create a simple function — chooseName() — that prints a random name from the provided array (['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']) to the provided paragraph (choose_name_result), and then run it once.
+    </p>
+    <div class="choose_name_result"></div>
+    <div>
+        <input type="button" value="Choose Name" class="choose_name_button">
+    </div>
+
+    <h3>Functions 2</h3>
+    <p>
+        For our second functions-related task, you need to create a function that draws a rectangle on the provided &lt;canvas&gt;(reference variable canvas, context available in ctx), based on the five provided input variables:
+
+        <ul>
+            <li>x — the x coordinate of the rectangle.</li>
+            <li>y — the y coordinate of the rectangle.</li>
+            <li>width — the width of the rectangle.</li>
+            <li>height — the height of the rectangle.</li>
+            <li>color — the color of the rectangle.</li>
+        </ul>
+        
+        You'll want to clear the canvas before drawing, so that when the code is updated in the case of the live version, you don't get lots of rectangles drawn on top of one another.
+    </p>
+
+    <canvas class="canvas_area" width="480" height="320"></canvas>
+
+    <!-- 
+        const x = 50;
+        const y = 60;
+        const width = 100;
+        const height = 75;
+        const color = 'blue'; -->
+
+    <div class="data_div">
+        <div>
+            x: <input type="number" name="x_input" id="x_input" value="50">  
+            y: <input type="number" name="y_input" id="y_input" value="60">
+        </div>
+        <div>
+            width: <input type="number" name="width_input" id="width_input" value="100">
+            height: <input type="number" name="height_input" id="height_input" value="75">
+        </div>
+        <div>
+            color: <select name="colors_select" id="colors_select">
+                <option value="blue">blue</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <input type="button" value="Draw Shape" class="draw_shape_button">
+    </div>
+
+    <script>
+        const x = 1;
+
+        function a() {
+            const y = 2;
+            output(x);
+        }
+
+        function b() {
+            const z = 3;
+            output(x);
+        }
+
+        function output(value) {
+            const para = document.createElement('p');
+            document.body.appendChild(para);
+            para.textContent = `Value: ${value}`;
+        }
+    </script>
+
+    <script src="../js/dist/functions_exercises.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    references: 
+        https://www.w3schools.com/tags/att_input_value.asp
+        https://www.scaler.com/topics/dropdown-menu-in-html/
+        https://www.geeksforgeeks.org/how-to-check-whether-a-number-is-nan-or-finite-in-javascript/
+        https://www.w3schools.com/graphics/canvas_drawing.asp
+        https://www.freecodecamp.org/news/how-to-loop-through-an-array-in-javascript-js-iterate-tutorial/
+-->

@@ -1,0 +1,11 @@
+.choose_name_result {
+    border: solid 2px black;
+    height: 20px;
+    width: 200px;
+    font-family: sans-serif;
+    color: purple;
+}
+
+.canvas_area {
+    border: 1px solid black;
+}
