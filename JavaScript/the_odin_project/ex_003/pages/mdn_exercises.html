@@ -20,6 +20,7 @@
         <input type="button" value="Choose Name" class="choose_name_button">
     </div>
 
+
     <h3>Functions 2</h3>
     <p>
         For our second functions-related task, you need to create a function that draws a rectangle on the provided &lt;canvas&gt;(reference variable canvas, context available in ctx), based on the five provided input variables:
@@ -66,6 +67,36 @@
         <input type="button" value="Draw Shape" class="draw_shape_button">
     </div>
 
+
+    <h3>Functions 3</h3>
+
+    <p>
+        In this task, you return to the problem posed in Task 1, with the aim of improving it. The three improvements we want you to make are:
+        
+        <ol>
+            <li>Refactor the code that generates the random number into a separate function called random(), which takes as parameters two generic bounds that the random number should be between, and returns the result.            </li>
+            <li>Update the chooseName() function so that it makes use of the random number function, takes the array to choose from as a parameter (making it more flexible), and returns the result.</li>
+            <li>Print the returned result into the paragraph (para)'s textContent.</li>
+        </ol>
+    </p>
+
+    <div>
+        Names List:
+        <input type="text" class="names_list_input" value="Chris, Li Kang, Anne, Francesca, Mustafa, Tina, Bert, Jada">
+    </div>
+    <div>
+        Numbers interval: 
+        <input type="number" name="random_input_1" id="random_input_1"> 
+        |
+        <input type="number" name="random_input_2" id="random_input_2">
+    </div>
+    <div>
+        Chosen Name: <div class="choose_name_result_2"></div>
+    </div>
+    <div>
+        <input type="button" value="Choose Name" class="choose_name_button_2">
+    </div>
+
     <script>
         const x = 1;
 
@@ -98,4 +129,9 @@
         https://www.geeksforgeeks.org/how-to-check-whether-a-number-is-nan-or-finite-in-javascript/
         https://www.w3schools.com/graphics/canvas_drawing.asp
         https://www.freecodecamp.org/news/how-to-loop-through-an-array-in-javascript-js-iterate-tutorial/
+        https://stackoverflow.com/questions/52423842/what-is-not-assignable-to-parameter-of-type-never-error-in-typescript
+        https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
+        https://medium.com/@vladbezden/how-to-get-min-or-max-of-an-array-in-javascript-1c264ec6e1aa
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+        https://sentry.io/answers/remove-specific-item-from-array/
 -->
