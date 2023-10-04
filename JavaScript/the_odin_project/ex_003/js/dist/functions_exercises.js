@@ -15,10 +15,13 @@ var random_input_1 = document.querySelector("#random_input_1");
 var random_input_2 = document.querySelector("#random_input_2");
 var choose_name_result_2 = document.querySelector(".choose_name_result_2");
 var choose_name_button_2 = document.querySelector(".choose_name_button_2");
+var short_names_result_div = document.querySelector(".short_names_result");
+var short_names_button = document.querySelector(".short_names_button");
 // make the connections(event listeners) from the html elements to the functions
 choose_name_button === null || choose_name_button === void 0 ? void 0 : choose_name_button.addEventListener("click", choose_name);
 draw_shape_button.addEventListener("click", draw_shape);
 choose_name_button_2.addEventListener("click", choose_name_2);
+short_names_button.addEventListener("click", show_short_names);
 // make the functions that will be called when the user interacts with the html elements
 function choose_name() {
     var names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
@@ -75,6 +78,7 @@ function choose_name_2() {
     names_list_string = names_list_string.replace(/, /g, "*-*-*-*-*");
     names_list_string = names_list_string.replace(/,/g, "*-*-*-*-*");
     var names_list = names_list_string.split("*-*-*-*-*");
+    names_list.filter(removeValue);
     var random_value_1 = parseInt(random_input_1.value);
     var random_value_2 = parseInt(random_input_2.value);
     if (isNaN(random_value_1)) {
@@ -96,10 +100,22 @@ function choose_name_2() {
 }
 function removeValue(value, index, arr) {
     // If the value at the current array index matches the specified value (2)
-    if (value === 1) {
+    if (value === '') {
         // Removes the value from the original array
         arr.splice(index, 1);
         return true;
     }
     return false;
 }
+function show_short_names() {
+    var names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
+    var shortNames = names.filter(function (name) { return name.length < 5; });
+    short_names_result_div.innerHTML = shortNames.join(',');
+}
+// const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
+// const para = document.createElement('p');
+// function isShort(name) {
+//   return name.length < 5;
+// }
+// const shortNames = names.filter(isShort);
+// para.textContent = shortNames;

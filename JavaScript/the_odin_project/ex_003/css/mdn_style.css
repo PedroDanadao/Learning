@@ -1,5 +1,6 @@
 .choose_name_result,
-.choose_name_result_2 {
+.choose_name_result_2,
+.short_names_result {
     border: solid 2px black;
     height: 20px;
     width: 200px;
