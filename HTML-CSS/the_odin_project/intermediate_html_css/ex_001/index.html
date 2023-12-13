@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Title</h1>
+        <div class="content">
+            <p>Hello World</p>
+        </div>
+    </div>
+
+    one
+    two
+    tree
+    <!-- ul>li* -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>tree</li>
+    </ul>
+    
+    1. About
+    2. News
+    3. Products
+    4. Contacts
+    <!-- ul.nav>li.nav-item$*>a|t -->
+    <ul class="nav">
+        <li class="nav-item1">
+            <a href="">About</a>
+        </li>
+        <li class="nav-item2">
+            <a href="">News</a>
+        </li>
+        <li class="nav-item3">
+            <a href="">Products</a>
+        </li>
+        <li class="nav-item4">
+            <a href="">Contacts</a>
+        </li>
+    </ul>
+
+    About
+    News
+    Products
+    Contacts
+    <!-- ul>li[title=$#]*>{$#}+img[alt=$#] -->
+    <ul>
+        <li title="About">
+            About
+            <img src="" alt="About">
+        </li>
+        <li title="News">
+            News
+            <img src="" alt="News">
+        </li>
+        <li title="Products">
+            Products
+            <img src="" alt="Products">
+        </li>
+        <li title="Contacts">
+            Contacts
+            <img src="" alt="Contacts">
+        </li>
+    </ul>
+
+    <div class="wrapper">
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Officiis animi consequuntur iure.</p>
+        <p>Ea asperiores aperiam non necessitatibus?</p>
+        <p>Expedita iusto cupiditate eum esse.</p>
+    </div>
+    <!-- Remove tag action on div -->
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Officiis animi consequuntur iure.</p>
+    <p>Ea asperiores aperiam non necessitatibus?</p>
+    <p>Expedita iusto cupiditate eum esse.</p>
+
+    <span class="purple"></span><!-- span.purple + Enter -->
+    <div id="divId"></div><!-- div#divId + Enter -->
+    <div class="class-1 class-2" id="id-1"></div> <!-- div.class-1.class-2#id-1 + Enter -->
+    <div class="class"></div> <!-- .class + Enter -->
+    <div id="id"></div> <!-- #id + Enter -->
+
+    <button type="button"></button> <!-- button[type="button"] + Enter -->
+    <div data-selected=""></div> <!-- [data-selected] + Enter -->
+    <div data-selected="" class="active"></div> <!-- [data-selected].active + Enter -->
+    <div class="purple"><span class="cyan"></span></div> <!-- .purple>span.cyan + Enter -->
+
+    <header>
+        <nav>
+            <ul>
+                <li class="class-1">list item 01</li>
+                <li class="class-2">list item 02</li>
+                <li class="class-3">list item 03</li>
+            </ul>
+        </nav>
+    </header><!-- header>nav>ul>li*3.class-${list item $$} + Enter -->
+
+    <header>
+        <nav></nav>
+    </header>
+    <main></main>
+    <footer></footer> <!-- (header>nav)+main+footer + Enter -->
+</body>
+</html>
+
+<!-- 
+    lesson: Emmet
+    lesson links: 
+        https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-emmet
+        https://docs.emmet.io/actions/wrap-with-abbreviation/
+        https://docs.emmet.io/actions/remove-tag/
+        https://www.youtube.com/watch?v=V8vizNQKtx0
+-->
