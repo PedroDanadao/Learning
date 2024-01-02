@@ -1,0 +1,109 @@
+.mdn_non_style_table table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.mdn_non_style_table td,
+.mdn_non_style_table th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+.mdn_non_style_table td {
+    text-align: center;
+}
+
+.mdn_non_style_table caption {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.spending_container table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.spending_container td,
+.spending_container th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+.spending_container th {
+    background-color: rgb(235, 235, 235);
+}
+
+.spending_container td {
+    text-align: center;
+}
+
+.spending_container tr:nth-child(even) td {
+    background-color: rgb(250, 250, 250);
+}
+
+.spending_container tr:nth-child(odd) td {
+    background-color: rgb(245, 245, 245);
+}
+
+.spending_container caption {
+    padding: 10px;
+}
+
+.spending_container tbody {
+    font-size: 95%;
+    font-style: italic;
+}
+
+.spending_container tfoot {
+    font-weight: bold;
+}
+
+.nested_table table,
+.nested_table th,
+.nested_table tr,
+.nested_table td {
+    border: solid 1px black;
+}
+
+
+.sold_items table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.sold_items td,
+.sold_items th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+.sold_items th {
+    background-color: rgb(235, 235, 235);
+}
+
+.sold_items td {
+    text-align: center;
+}
+
+.sold_items tr:nth-child(even) td {
+    background-color: rgb(250, 250, 250);
+}
+
+.sold_items tr:nth-child(odd) td {
+    background-color: rgb(245, 245, 245);
+}
+
+.sold_items caption {
+    padding: 10px;
+}

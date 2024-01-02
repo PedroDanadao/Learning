@@ -1,0 +1,60 @@
+/* mdn table basics */
+.mdn01 table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.mdn01 td,
+.mdn01 th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+.mdn01 th {
+    background-color: rgb(235, 235, 235);
+}
+
+.mdn01 td {
+    text-align: center;
+}
+
+.mdn01 tr:nth-child(even) td {
+    background-color: rgb(250, 250, 250);
+}
+
+.mdn01 tr:nth-child(odd) td {
+    background-color: rgb(245, 245, 245);
+}
+
+.mdn01 caption {
+    padding: 10px;
+}
+
+
+.mdn_non_style_table table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.mdn_non_style_table td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+.mdn_non_style_table td {
+    text-align: center;
+}
+
+.mdn_non_style_table caption {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

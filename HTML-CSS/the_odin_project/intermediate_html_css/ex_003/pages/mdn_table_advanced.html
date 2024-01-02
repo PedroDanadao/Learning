@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDN Table Advanced</title>
+
+    <link rel="stylesheet" href="../css/style_mdn_table_advanced.css">
+</head>
+
+<body>
+    <h1>MDN Table Advanced</h1>
+
+    <table>
+        <caption>
+            Dinosaurs in the Jurassic period
+        </caption>
+
+        …
+    </table>
+
+    <br>
+
+    <div class="mdn_non_style_table">
+        <table>
+
+            <caption>Subjects to teach during the week</caption>
+
+            <colgroup>
+                <col />
+                <col />
+                <col style="background-color: #97DB9A;" />
+                <col width="42px">
+                <col style="background-color: #97DB9A;" />
+                <col style="background-color:#DCC48E; border:4px solid #C1437A;">
+                <col width="42" span="2">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <th>Mon</th>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>1st period</th>
+                    <td>English</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>German</td>
+                    <td>Dutch</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>2nd period</th>
+                    <td>English</td>
+                    <td>English</td>
+                    <td>&nbsp;</td>
+                    <td>German</td>
+                    <td>Dutch</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>3rd period</th>
+                    <td>&nbsp;</td>
+                    <td>German</td>
+                    <td>&nbsp;</td>
+                    <td>German</td>
+                    <td>Dutch</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th>4th period</th>
+                    <td>&nbsp;</td>
+                    <td>English</td>
+                    <td>&nbsp;</td>
+                    <td>English</td>
+                    <td>Dutch</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+
+    <br>
+
+    <h2>My spending record</h2>
+
+    <div class="spending_container">
+
+        <table>
+
+            <caption>How I chose to spend my money</caption>
+
+            <thead>
+                <tr>
+                    <th>Purchase</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Evaluation</th>
+                    <th>Cost (€)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Haircut</td>
+                    <td>Hairdresser</td>
+                    <td>12/09</td>
+                    <td>Great idea</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Lasagna</td>
+                    <td>Restaurant</td>
+                    <td>12/09</td>
+                    <td>Regrets</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Shoes</td>
+                    <td>Shoeshop</td>
+                    <td>13/09</td>
+                    <td>Big regrets</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>Toothpaste</td>
+                    <td>Supermarket</td>
+                    <td>13/09</td>
+                    <td>Good</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">SUM</td>
+                    <td>118</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="nested_table">
+        <table id="table1">
+            <tr>
+                <th>title1</th>
+                <th>title2</th>
+                <th>title3</th>
+            </tr>
+            <tr>
+                <td id="nested">
+                    <table id="table2">
+                        <tr>
+                            <td>cell1</td>
+                            <td>cell2</td>
+                            <td>cell3</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>cell2</td>
+                <td>cell3</td>
+            </tr>
+
+            <tr>
+                <td>cell4</td>
+                <td>cell5</td>
+                <td>cell6</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="sold_items">
+        <h2>Items sold summary</h2>
+        <table>
+
+            <caption>Items Sold August 2016</caption>
+
+            <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <th colspan="3" scope="colgroup">Clothes</th>
+                    <th colspan="2" scope="colgroup">Accessories</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <th scope="col">Trousers</th>
+                    <th scope="col">Skirts</th>
+                    <th scope="col">Dresses</th>
+                    <th scope="col">Bracelets</th>
+                    <th scope="col">Rings</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Belgium</th>
+                    <th scope="row">Antwerp</th>
+                    <td>56</td>
+                    <td>22</td>
+                    <td>43</td>
+                    <td>72</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gent</th>
+                    <td>46</td>
+                    <td>18</td>
+                    <td>50</td>
+                    <td>61</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th scope="row">Brussels</th>
+                    <td>51</td>
+                    <td>27</td>
+                    <td>38</td>
+                    <td>69</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">The Netherlands</th>
+                    <th scope="row">Amsterdam</th>
+                    <td>89</td>
+                    <td>34</td>
+                    <td>69</td>
+                    <td>85</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <th scope="row">Utrecht</th>
+                    <td>80</td>
+                    <td>12</td>
+                    <td>43</td>
+                    <td>36</td>
+                    <td>19</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <table>
+
+            <caption>Items Sold August 2016</caption>
+
+            <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <th colspan="3" id="clothes">Clothes</th>
+                    <th colspan="2" id="accessories">Accessories</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <th id="clothes trousers">Trousers</th>
+                    <th id="clothes skirts">Skirts</th>
+                    <th id="clothes dresses">Dresses</th>
+                    <th id="accessories bracelets">Bracelets</th>
+                    <th id="accessories rings">Rings</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="3" id="belgium">Belgium</th>
+                    <th id="blegium antwrp">Antwerp</th>
+                    <td id="antwerp trousers">56</td>
+                    <td id="antwerp skirts">22</td>
+                    <td id="antwerp dresses">43</td>
+                    <td id="antwerp bracelets">72</td>
+                    <td id="antwerp rings">23</td>
+                </tr>
+                <tr>
+                    <th id="belgium gent">Gent</th>
+                    <td id="gent trousers">46</td>
+                    <td id="gent skirts">18</td>
+                    <td id="gent dresses">50</td>
+                    <td id="gent bracelets">61</td>
+                    <td id="gent rings">15</td>
+                </tr>
+                <tr>
+                    <th id="belgium brussels">Brussels</th>
+                    <td id="brussels trousers">51</td>
+                    <td id="brussels skirts">27</td>
+                    <td id="brussels dresses">38</td>
+                    <td id="brussels bracelets">69</td>
+                    <td id="brussels rings">28</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" id="the netherlands">The Netherlands</th>
+                    <th id="the netherlands amsterdam">Amsterdam</th>
+                    <td id="amsterdam trousers">89</td>
+                    <td id="amsterdam skirts">34</td>
+                    <td id="amsterdam dresses">69</td>
+                    <td id="amsterdam bracelets">85</td>
+                    <td id="amsterdam rings">38</td>
+                </tr>
+                <tr>
+                    <th id="the netherlands utrecht">Utrecht</th>
+                    <td id="utrecht">80</td>
+                    <td id="utrecht">12</td>
+                    <td id="utrecht">43</td>
+                    <td id="utrecht">36</td>
+                    <td id="utrecht">19</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+    <br>
+
+    <footer><a href="../index.html">home</a></footer>
+</body>
+
+
+</html>
