@@ -1,0 +1,30 @@
+/* This rule will only select divs with a class of child */
+main>div {
+    background-color: rosybrown;
+
+    width: 100px;
+    height: 100px;
+}
+
+/* This rule will only select divs with a class of grand-child */
+/* main>div>div {
+    background-color: aqua;
+
+    width: 100px;
+    height: 100px;
+} */
+
+/* This rule will only select the div with the class child group2 */
+.group1+div {
+    border: 2px dotted purple;
+}
+
+/* This rule will only select the div with the class child group3 */
+.group1+div+div {
+    border: 3px dotted red;
+}
+
+/* This rule will select all of .group1's siblings - in this case the 2nd and 3rd .child divs */
+.group1~div {
+    border-radius: 10px;
+}

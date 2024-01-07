@@ -1,0 +1,90 @@
+ol li::marker {
+    color: red;
+    font-weight: bold;
+}
+
+ul li::marker {
+    font-size: 150%;
+    color: lightgreen;
+}
+
+ol.emoji li::marker {
+    content: "🧡 ";
+}
+
+h3 {
+    counter-increment: h3;
+    display: list-item;
+}
+
+h3::marker {
+    display: list-item;
+    content: "#" counter(h3) " ";
+    color: lightsalmon;
+    font-weight: bold;
+}
+
+body {
+    counter-reset: h3;
+    line-height: 1.4;
+    font-family: system-ui;
+    margin: 3rem;
+}
+
+.first-letter+p::first-letter {
+    font-weight: bold;
+    color: red;
+}
+
+
+article {
+    padding: 20px;
+}
+
+article p {
+    color: #444;
+}
+
+article p:first-line {
+    color: deepskyblue;
+}
+
+.p2 {
+    color: #444;
+}
+
+.p2:first-line {
+    color: tomato;
+}
+
+#p3 {
+    color: #444;
+}
+
+#p3:first-line {
+    color: firebrick;
+}
+
+#p4 {
+    color: #444 !important;
+}
+
+#p4:first-line {
+    color: hotpink;
+}
+
+
+p::selection {
+    background-color: green;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+.before_after div::before {
+    content: "before content ";
+}
+
+.before_after div::after {
+    content: " after content ";
+}

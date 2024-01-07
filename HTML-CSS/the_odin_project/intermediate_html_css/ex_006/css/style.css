@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Define the "system" font family */
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/* Now, let's apply it on an element */
+body {
+    font-family: "system-ui";
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.first_imported {
+    font-family: "Rubik Doodle Triangles", sans-serif;
+}
+
+.second_imported {
+    font-family: "brushrunes", serif;
+}
+
+.third_imported {
+    font-family: "Long Cang", serif;
+}
+
+.fourth_imported {
+    font-family: "OpenBaskerville0053Normal", sans-serif;
+}
+
+.fifth_imported {
+    font-family: "Lato";
+}
+
+
+.first_ls {
+    letter-spacing: 0.2rem;
+}
+
+.second_ls {
+    letter-spacing: 1rem;
+}
+
+.third_ls {
+    letter-spacing: 10rem;
+}
+
+
+.first_lh {
+    line-height: 0.1rem;
+}
+
+.second_lh {
+    line-height: 0.8rem;
+}
+
+.third_lh {
+    line-height: 12rem;
+}
+
+.tt_1 {
+    text-transform: capitalize;
+}
+ 
+.tt_2 {
+    text-transform: uppercase;
+}
+ 
+.tt_3 {
+    text-transform: lowercase;
+}
+ 
+.tt_4 {
+    text-transform: none;
+}
+ 
+.tt_5 {
+    text-transform: full-width;
+}
+ 
+.tt_6 {
+    text-transform: full-size-kana;
+}
+
+
+h3 {
+    font-size: 1.5em;
+}
+
+.ts1 {
+    text-shadow: blue 1px 2px 3px;
+}
+
+.ts2 {
+    text-shadow: red 3px 3px;
+}
+
+.ts3 {
+    text-shadow: purple 1px 0px 10px;
+}
+
+.ts4 {
+    text-shadow: 10px 0px;
+}
+
+.ts5 {
+    text-shadow: 
+        0px 10px, 
+        0px 20px;
+}
+
+.el_2 {
+    width: 300px;
+    background-color: aqua;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

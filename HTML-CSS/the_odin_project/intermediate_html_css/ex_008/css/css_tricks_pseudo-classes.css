@@ -1,0 +1,57 @@
+textarea:focus {
+    background: pink;
+}
+
+@import "compass/css3";
+
+.focus :focus {
+    background: pink;
+}
+
+.focus div {
+    margin: 16px 0;
+}
+
+.focus textarea {
+    width: 500px;
+}
+
+.focus button {
+    margin: 16px 0;
+    display: block;
+}
+
+
+.hover a:hover {
+    color: green;
+    text-decoration: underline overline;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.active a {
+    position: relative;
+}
+
+.active a:active {
+    top: 3px;
+  }
+
+.active a+a:link {
+    color: blue;
+}
+
+.active a+a:visited {
+    color: purple;
+}
+
+.active a+a:hover {
+    color: green;
+}
+
+.active a+a:active {
+    color: black;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tricks Pseudo-Classes</title>
+
+    <link rel="stylesheet" href="../css/css_tricks_pseudo-classes.css">
+</head>
+
+<body>
+    <h1 style="display: flex; justify-content: center;">CSS Tricks Pseudo-Classes</h1>
+
+    <div class="focus">
+        <h2>:focus</h2>
+    
+        <textarea name="" id="" cols="" rows="" placeholder="Demo: click inside me (or tab to me) to focus"></textarea>
+    
+        <h3>HTML Methods for Making Things Tab-able</h3>
+    
+        <p>All of the items below are tabbable. The text area and button are tabbable by default, and the divs use two
+            different methods.</p>
+    
+        <textarea tabindex="1">A textarea. Focus states work by default.</textarea>
+        <button tabindex="2">And I'm a button. Again, works by default.</button>
+        <div contenteditable tabindex="3">Divs don't usually have a focus state. But I'm special, because I'm
+            <code>contenteditable</code>.
+        </div>
+        <div tabindex="4">I'm another div, and I have a <code>tabindex</code>. You can't edit me like the div above, but you
+            can tab to me.</div>
+        <textarea
+            tabindex="-1">I can't be tabbed to. This is a terrible idea, generally, but it can be done using tabindex="-1". Notice that (if you click) I still have a focus state, even though you can't tab to me.</textarea>
+    </div>
+
+    <div class="hover">
+        <h2 class="hover">:hover</h2>
+    
+        <a href="https://google.com" target="_blank">google.com</a>
+    </div>
+
+    <div class="active">
+        <h2>:active</h2>
+        
+        <a href="#">Click Me</a>
+
+        <a href="#">Click Me Too</a>
+    </div>
+
+
+    <br>
+    <a style="display: flex; justify-content: center;" href="../index.html">Home</a>
+</body>
+
+</html>

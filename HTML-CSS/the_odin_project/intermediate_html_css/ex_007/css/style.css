@@ -1,0 +1,14 @@
+.bordered_image {
+    border-radius: 50% 20% / 10% 40%;
+}
+
+.example_shadow {
+    width: 200px;
+    height: 75px;
+
+    margin-top: 100px;
+
+    /* box-shadow: 10px 10px 0 10px; */
+    box-shadow: 10px 10px;
+    box-shadow: 10px 10px 40px;
+}
