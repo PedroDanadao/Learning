@@ -1,0 +1,105 @@
+div.container {
+    display: flex;
+    gap: 10px
+}
+
+div.container div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+div.container div.two {
+    background-color: blue;
+}
+
+div.two:hover {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 500px;
+    margin: 0 auto;
+}
+
+p {
+    background: aqua;
+    border: 3px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+span {
+    background: red;
+    border: 1px solid black;
+}
+
+.positioned:active {
+    position: absolute;
+    background: yellow;
+    top: 30px;
+    left: 30px;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+
+#one {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    background: blue;
+}
+
+
+dl>div {
+    background: #fff;
+    padding: 24px 0 0 0;
+}
+
+dt {
+    background: #b8c1c8;
+    border-bottom: 1px solid #989ea4;
+    border-top: 1px solid #717d85;
+    color: #fff;
+    font:
+        bold 18px/21px Helvetica,
+        Arial,
+        sans-serif;
+    margin: 0;
+    padding: 2px 0 0 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px; /* Must be provided or else wont work */
+}
+
+dd {
+    font:
+        bold 20px/45px Helvetica,
+        Arial,
+        sans-serif;
+    margin: 0;
+    padding: 0 0 0 12px;
+    white-space: nowrap;
+}
+
+dd+dd {
+    border-top: 1px solid #ccc;
+}
+
+
+.spacer {
+    height: 3000px;
+}
