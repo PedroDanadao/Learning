@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.calc_navigation header {
+    height: 60px;
+    background-color: rgb(124, 224, 224);
+    margin: 0;
+}
+
+.calc_navigation div {
+    color: azure;
+    background-color: blue;
+    height: calc(100vh - 60px);
+    /* this is 100% of the viewport height minus 60px(the height of the header) */
+}
+
+.calc_navigation * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heading_padding h1 {
+    font-size: clamp(1.75rem, 4vw + 1rem, 3rem);
+}
+
+.heading_padding div {
+    background-color: blueviolet;
+
+    padding: 1.5rem clamp(1rem, 5%, 3rem);
+}
+
+
+.min_sizing :nth-child(2) {
+    width: min(75ch, 100vw - 2rem);
+}
+
+.min_sizing .background_image {
+    color: white;
+    background: #1F1B1C url(https://source.unsplash.com/RapCPd_mJTU/800x800) no-repeat center;
+    background-size: min(1000px, 100%);
+}
+
+
+.max_sizing img {
+    width: max(800px, 50vw);
+}
