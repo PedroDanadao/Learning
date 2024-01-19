@@ -1,0 +1,67 @@
+.first_example>div {
+	--color-error-text: red;
+	--modal-border: 1px solid black;
+	--modal-font-size: calc(2rem + 5vw);
+
+	color: var(--color-error-text);
+	border: var(--modal-border);
+	font-size: var(--modal-font-size);
+
+	display: flex;
+	justify-content: center;
+}
+
+
+.second_example {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 400px;
+	height: 300px;
+
+	background-color: aqua;
+}
+
+.second_example>div {
+	width: 100px;
+	height: 100px;
+
+	--color-text: white;
+	--bogus-property: adsçlfkjfdasçlkj;
+	background-color: var(--undeclared-property, black);
+	/* color: var(--bogus-property, var(--color-text, yellow)); 
+	will use the value in bogus property since it was declared(even if it's 
+	value equates to nothing) */
+	color: var(--undeclared-property, var(--color-text, yellow));
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.cool-div {
+	--main-bg: red;
+}
+
+.third_example .cool-paragraph {
+	background-color: var(--main-bg);
+}
+
+.boring-paragraph {
+	background-color: var(--main-bg);
+}
+
+
+:root {
+	--main-color: aqua;
+}
+
+.cool-paragraph {
+	background-color: var(--main-color);
+}
+
+.exciting-paragraph {
+	background-color: var(--main-color);
+}
