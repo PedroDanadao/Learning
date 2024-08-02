@@ -1,0 +1,144 @@
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+body>:not(.common_form) label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+}
+
+
+.common_form h1 {
+    margin-top: 0;
+}
+
+.common_form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.common_form form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+.common_form div+div {
+    margin-top: 1em;
+}
+
+.common_form label span {
+    display: inline-block;
+    text-align: right;
+}
+
+.common_form input,
+.common_form textarea {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.common_form input[type="checkbox"],
+.common_form input[type="radio"] {
+    width: auto;
+    border: none;
+}
+
+.common_form input:focus,
+.common_form textarea:focus {
+    border-color: #000;
+}
+
+.common_form textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+.common_form fieldset {
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.common_form button {
+    margin: 20px 0 0 0;
+}
+
+.common_form label {
+    position: relative;
+    display: inline-block;
+}
+
+.common_form p label {
+    width: 100%;
+}
+
+.common_form label em {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}

@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 400px;
+}
+
+label {
+    text-align: right;
+    position: relative;
+    display: inline-block;
+}

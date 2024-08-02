@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your First Form</title>
+
+    <link rel="stylesheet" href="../css/mdn_your_first_form.css">
+</head>
+
+<body>
+    <form action="/my_handling_form_page" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="submit_button">
+                <button type="submit">Send your message</button>
+            </li>
+        </ul>
+    </form>
+
+    <br>
+
+    <form action="/my_handling_form_page" method="post">
+        <fieldset>
+            <legend>Fruit juice size</legend>
+            <p>
+                <input type="radio" name="size" id="size_1" value="small" />
+                <label for="size_1">Small</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_2" value="medium" />
+                <label for="size_2">Medium</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_3" value="large" />
+                <label for="size_3">Large</label>
+            </p>
+        </fieldset>
+    </form>
+
+    <br>
+
+
+    <form>
+        <p>
+            <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry" />
+            <label for="taste_1">I like cherry</label>
+        </p>
+        <p>
+            <input type="checkbox" id="taste_2" name="taste_banana" value="banana" />
+            <label for="taste_2">I like banana</label>
+        </p>
+    </form>
+
+    <br>
+
+    <form action="#" method="post" class="common_form">
+        <h1>Payment Form</h1>
+        <p>
+            Required fields are followed by
+            <strong><span aria-label="required">*</span></strong>
+        </p>
+
+        <section>
+            <h2>Contact Information</h2>
+            
+            <fieldset>
+                <legend>Title</legend>
+                <ul>
+                    <li>
+                        <label for="title_1">Ace</label>
+                        <input type="radio" name="title" id="title_1" value="A">
+                    </li>
+                    <li>
+                        <label for="title_2">King</label>
+                        <input type="radio" name="title" id="title_2" value="B">
+                    </li>
+                    <li>
+                        <label for="Queen">Queen</label>
+                        <input type="radio" name="title" id="title_3" value="C">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <p>
+                <label for="name">
+                    <span>Name:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" name="username" id="name" required="required">
+            </p>
+            <p>
+                <label for="mail">
+                    <span>Email</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="email" name="usermail" id="mail" required="required">
+            </p>
+            <p>
+                <label for="pwd">
+                    <span>Password</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="password" name="password" id="pwd" required="required">
+            </p>
+        </section>
+
+        <section>
+            <h2>Payment Information</h2>
+            <p>
+                <label for="card">
+                    <span>Card Type:</span>
+                </label>
+                <select name="usercard" id="card">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Master Card</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </p>
+            <p>
+                <label for="number">
+                    <span>Card Number:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="tel" name="cardnumber" id="number" required>
+            </p>
+            <p>
+                <label for="expiration">
+                    <span>Expiration Date:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" name="expiration_date" id="expiration"
+                    required placeholder="MM/YY" 
+                    pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
+            </p>
+        </section>
+
+        <section>
+            <p><button type="submit">Validate the payment</button></p>
+        </section>
+    </form>
+
+</body>
+
+</html>
