@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/form_styling_exercise.css">
+    <script src="../js/dist/form_styling_exercise.js" defer></script>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Info</legend>
+            
+            <div>
+                <div>
+                    <label for="user_name">Full Name: </label>
+                    <input type="text" id="user_name" name="user_name" placeholder="Your Name Here" class="long_inputs">
+                </div>
+                
+                <div>
+                    <label for="cell_phone">Cell Phone:</label>
+                    <input type="tel" name="cell_phone" id="cell_phone" placeholder="(214) 748-3647">
+                    
+                    <label for="zip_code">Zip Code: </label>
+                    <input type="text" pattern="[0-9]{4}" title="Four digit zip code" name="zip_code" id="zip_code"
+                    placeholder="10075"/>
+                </div>
+
+                <div>
+                    <label for="street_name">Street Name: </label>
+                    <input type="text" name="street_name" id="street_name" class="long_inputs">
+                </div>
+
+                <div>
+                    <label for="street_number">Number</label>
+                    <input type="number" name="street_number" id="street_number">
+
+                    <label for="state">State</label>
+                    <select name="state" id="state"></select>
+                    
+                    <label for="city">City: </label>
+                    <select name="city" id="city"></select>
+
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -237,6 +237,96 @@
         </fieldset>
     </form>
 
+    <h2>Other Form Controls 1.</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Enter Your Comment</legend>
+            
+            <ul>
+                <li>
+                    <label for="name_input">Name</label>
+                    <input type="text" id="name_input" name="name_input">
+                </li>
+                <li>
+                    <label for="comment_text">Comment</label>
+                    <textarea name="comment_text" id="comment_text" cols="35" rows="10" maxlength="100"></textarea>
+                </li>
+                <li>
+                    <button>Submit comment</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <h2>Other Form Controls 2.</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Favorite Food</legend>
+            <ul>
+                <li>
+                    <label for="food_drop_down">Pick Your Favorite Food: </label>
+                    <select name="food_drop_down" id="food_drop_down">
+                        <optgroup label="mains">
+                            <option value="salad">Salad</option>
+                            <option value="curry">Curry</option>
+                            <option value="pizza">Pizza</option>
+                            <option value="fajitas">Fajitas</option>
+                        </optgroup>
+                        <optgroup label="snacks">
+                            <option value="biscuits">Biscuits</option>
+                            <option value="crisps">Crisps</option>
+                            <option value="fruit">Fruit</option>
+                            <option value="breadsticks">Breadsticks</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <button>Submit choice</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <h2>Other Form Controls 3.</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Favorite Food 2</legend>
+            <ul>
+                <li>
+                    <label for="food_auto_complete">Enter your favorite food:</label>
+                    <input type="text" name="food_auto_complete", id="food_auto_complete" list="food_suggestion">
+                    <datalist id="food_suggestion">
+                        <option>Salad</option>
+                        <option>Curry</option>
+                        <option>Pizza</option>
+                        <option>Fajitas</option>
+                        <option>Biscuits</option>
+                        <option>Crisps</option>
+                        <option>Fruit</option>
+                        <option>Breadsticks</option>
+                    </datalist>
+                </li>
+                <li>
+                    <button>Submit choice</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <h2>Advanced Form Styling</h2>
+    <form action="#">
+        <fieldset>
+            <legend>
+                Search Box Styling
+            </legend>
+            
+            <div class="parent_div">
+                <input type="search" class="searcher">
+                <div><img src="../imgs/search-24px.png" alt=""></div>
+            </div>
+        </fieldset>
+    </form>
+
 </body>
 
 </html>

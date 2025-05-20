@@ -14,3 +14,33 @@ label {
     position: relative;
     display: inline-block;
 }
+
+.searcher {
+    appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0; margin: 0;
+
+    width: 200px;
+    height: 25px;
+}
+
+.searcher:focus {
+    appearance: none;
+    border-radius: 30px;
+    border: 3px groove blue;
+    /* border-width: 15px; */
+    outline-color: blueviolet;
+    outline-width: 15px;
+    box-shadow: blue 15px;
+    outline: 0px none transparent;
+}
+
+.parent_div {
+    display: flex;
+    align-items: center;
+}
+
+.searcher~div {
+    padding-left: 10px;   
+}
