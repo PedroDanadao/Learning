@@ -92,9 +92,9 @@ body {
 }
 
 .form-row .instructions {
-  color: #999999;
-  font-size: 14px;
-  margin-bottom: 30px;
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
 .form-row .checkbox-label {
