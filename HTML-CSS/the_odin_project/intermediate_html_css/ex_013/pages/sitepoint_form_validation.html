@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitepoint Form Validation</title>
+
+    <link rel="stylesheet" href="../css/sitepoint_form_validation.css">
+</head>
+<body>
+    <form action="" method="post" class="sp_form">
+        <label for="credit_card_input">Credit Card Info</label>
+        <input type="text" name="credit_card_input" id="credit_card_input" inputmode="numeric" autocomplete="cc-number">
+
+        <label for="number_example">Number Example</label>
+        <input type="number" name="number_example" id="number_example" min="1" max="100" required>
+
+        <label for="email_example">Email Example</label>
+        <input type="email" name="email_example" id="email_example" placeholder="example@email.com">
+
+        <input type="submit" value="Submit" formnovalidate>
+    </form>
+</body>
+</html>
