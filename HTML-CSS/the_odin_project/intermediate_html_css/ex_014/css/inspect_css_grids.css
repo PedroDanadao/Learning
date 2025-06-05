@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template: 100px 1fr / [start]1fr [middle] 2fr [end];
+    height: 100vh;
+    grid-template-areas: "top top" "side main";
+}
+
+.container>div {
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+}
+
+.header {
+    background-color: blue;
+    grid-row: 1;
+    grid-column: start/end;
+}
+
+.content {
+    background-color: green;
+    /* grid-row: 2; */
+}
+
+.sidebar {
+    background-color: red;
+    /* grid-row: 2; */
+}
