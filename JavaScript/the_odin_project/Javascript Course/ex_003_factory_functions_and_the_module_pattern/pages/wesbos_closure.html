@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WesBos Closure</title>
+</head>
+<body>
+    <script>
+        function outer() {
+            var outer_var = "Hey I am a outer var";
+
+            function inner() {
+                var inner_var = "Hey I am a inner var";
+
+                console.log(inner_var);
+                console.log(outer_var);
+            }
+
+            return inner;
+        }
+
+        const inner_func = outer();
+        // inner_func();
+
+        function create_greeting(greeting="") {
+            const my_greet = greeting.toUpperCase();
+
+            return function(name) {
+                return `${my_greet} ${name}`;
+            };
+        }
+
+        const say_hello = create_greeting("Hello");
+        const say_hey = create_greeting("hey");
+        console.log(say_hello("wes"));
+        console.log(say_hello("kait"));
+        console.log(say_hey("kait"));
+
+
+        function create_game(game_name) {
+            let score = 0;
+
+            return function win() {
+                score++;
+                return `Your name ${game_name} score is ${score}`;
+            };
+        }
+
+        const hockey_game = create_game("Hockey");
+        const football_game = create_game("Football");
+    </script>
+</body>
+</html>
