@@ -1,3 +1,27 @@
 {
-    "compile-hero.disable-compile-files-on-did-save-code": false
+    "typescript.tsdk": "C:\\Users\\Pedro\\AppData\\Roaming\\npm\\node_modules\\typescript\\lib",
+    "compile-hero.language": {
+
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html"
+        ]
+    },
+    "compile-hero.config": ""
 }
