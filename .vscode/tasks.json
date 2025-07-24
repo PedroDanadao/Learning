@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"presentation": {
+        "panel": "new"
+    },
+	"tasks": [
+		{
+			"label": "Compile Typescript Current",
+			"type": "shell",
+			"command": "cd '${fileDirname}'; tsc '${file}' --target es6 --outDir dist",
+			"args": [],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build",
+		}
+	]
+}

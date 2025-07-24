@@ -14,7 +14,7 @@ class DateFormatter extends Date {
             "Nov",
             "Dec"
         ];
-        return `${this.getDate()}-${months[this.getMonth()]}-${this.getFullYear}`;
+        return `${this.getDate()}-${months[this.getMonth()]}-${this.getFullYear()}`;
     }
 }
 

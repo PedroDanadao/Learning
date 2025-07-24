@@ -14,7 +14,7 @@ class DateFormatter extends Date {
             "Nov",
             "Dec"
         ];
-        return `${this.getDate()}-${months[this.getMonth()]}-${this.getFullYear}`;
+        return `${this.getDate()}-${months[this.getMonth()]}-${this.getFullYear()}`;
     }
 }
 function hello(my_string) {
@@ -23,4 +23,3 @@ function hello(my_string) {
 // Printed on console
 // console.log(new DateFormatter("August 28, 1986 12:37:02").get_formatted_date())
 // 
-//# sourceMappingURL=mdn_extends.js.map

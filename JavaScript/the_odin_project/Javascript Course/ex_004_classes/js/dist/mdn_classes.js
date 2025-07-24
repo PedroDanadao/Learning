@@ -122,4 +122,3 @@ const l = new Lion("Fuzy");
 // l.speak();
 // Fuzy makes a noise.
 // mdn_classes.js:189 Fuzy roars.
-//# sourceMappingURL=mdn_classes.js.map
