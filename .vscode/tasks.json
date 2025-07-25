@@ -7,7 +7,17 @@
 		{
 			"label": "Compile Typescript Current",
 			"type": "shell",
-			"command": "cd '${fileDirname}'; tsc '${file}' --target es6 --outDir dist",
+			"command": "${workspaceFolder}\\.vscode\\compile_typescript.bat '${fileDirname}' '${file}'",
+			"args": [],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build",
+		},
+		{
+			"label": "Print Typescript Command",
+			"type": "shell",
+			"command": "${workspaceFolder}\\.vscode\\copy_tsc_command.bat '${fileDirname}' '${file}'",
 			"args": [],
 			"problemMatcher": [
 				"$tsc"
