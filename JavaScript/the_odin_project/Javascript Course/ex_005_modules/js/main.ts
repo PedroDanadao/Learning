@@ -18,3 +18,6 @@ console.log(foo); // 4.555806215962888
 
 import cube2 from "./cube.js";
 console.log(cube2(5)); // 125
+
+
+import {my_function, my_variable, MyClass} from "./parent_module.js"
