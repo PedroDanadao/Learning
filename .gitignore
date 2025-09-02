@@ -2,3 +2,5 @@
 **/ex011/midia/
 **/ex012/midia/
 
+node_modules/
+package-lock.json
