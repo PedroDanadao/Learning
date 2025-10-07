@@ -1,56 +1,39 @@
-class Shape {
-    get_area() {
-
+class FlyingBird {
+    fly() {
+        console.log("I can fly");
     }
 }
 
 
-class Rectangle extends Shape{
-    width;
-    height;
-    constructor(width: number, height: number) {
-        this.width = width;
-        this.height = height
-    }
-
-    set_width(width: number) {
-        this.width = width;
-    }
-    set_height(height: number) {
-        this.height = height;
-    }
-
-    get_area() {
-        return this.width * this.height;
+class SwimmingBird {
+    swim() {
+        console.log("I can swim");
     }
 }
 
 
-// instead of 
-// class Square extends Rectangle {
-class Square extends Shape {
-    width
-    height
-    
-    set_width(width: number) {
-        this.width = width;
-        this.height = width;
-    }
-    set_height(height: number){
-        this.width = height;
-        this.height = height;
+class Duck extends FlyingBird {
+    quack() {
+        console.log("I can quack");
     }
 }
 
-function increase_rectangle_width(rectangle: Rectangle) {
-    rectangle.set_width(rectangle.width + 1);
+
+class Penguin extends SwimmingBird {}
+
+
+function make_bird_fly(bird: FlyingBird) {
+    bird.fly();
 }
 
-const rectangle_1 = new Rectangle(10, 2);
-const square = new Square(5, 5);
 
-increase_rectangle_width(rectangle_1);
-increase_rectangle_width(square);
+function make_bird_swim(bird: SwimmingBird) {
+    bird.swim();
+}
 
-console.log(rectangle_1.get_area())
-console.log(square.get_area())
+
+const duck = new Duck();
+const penguin = new Penguin();
+
+make_bird_fly(duck);
+make_bird_swim(penguin);
